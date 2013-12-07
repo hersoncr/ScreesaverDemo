@@ -37,7 +37,8 @@ namespace ScreenSaver
 
         #endregion
 
-
+        private Point pictureBoxAcceleration;
+        private Point pictureBoxLocation;
         private Point mouseLocation;
         private bool previewMode = false;
         private Random rand = new Random();
@@ -82,16 +83,56 @@ namespace ScreenSaver
             Cursor.Hide();            
             TopMost = true;
 
+            pictureBoxAcceleration.X = 3;
+            pictureBoxAcceleration.Y = 3;
             moveTimer.Interval = 1000;
             moveTimer.Tick += new EventHandler(moveTimer_Tick);
             moveTimer.Start();
+
         }
 
         private void moveTimer_Tick(object sender, System.EventArgs e)
         {
-            // Move text to new location
-            bisonPictureBox.Left = rand.Next(Math.Max(1, Bounds.Width - bisonPictureBox.Width));
-            bisonPictureBox.Top = rand.Next(Math.Max(1, Bounds.Height - bisonPictureBox.Height));            
+            if (pictureBoxLocation.IsEmpty)
+            {
+                // Move text to new location
+                bisonPictureBox.Left = pictureBoxLocation.X = rand.Next(Math.Max(1, Bounds.Width - bisonPictureBox.Width));
+                bisonPictureBox.Top =  pictureBoxLocation.Y =rand.Next(Math.Max(1, Bounds.Height - bisonPictureBox.Height));
+                 
+            }
+            else
+            {
+                int newY = pictureBoxLocation.Y + pictureBoxAcceleration.Y;
+                int newX = pictureBoxLocation.X + pictureBoxAcceleration.X;
+                if (newY < 1 || newY > Bounds.Height - bisonPictureBox.Height)
+                {
+                    pictureBoxAcceleration.Y *= -1;
+                }
+                if (newX < 1 || newX > Bounds.Width - bisonPictureBox.Width)
+                {
+                    pictureBoxAcceleration.X *= -1;
+                }
+
+                bisonPictureBox.Left = newX;
+                bisonPictureBox.Top = newY;
+            }
+            if (pictureBoxLocation.Y < 1)
+            {
+                pictureBoxLocation.Y = 1;
+            }
+            else if (pictureBoxLocation.Y > Bounds.Height - bisonPictureBox.Height)
+            {
+                pictureBoxLocation.Y = Bounds.Height - bisonPictureBox.Height;
+            }
+
+            if (pictureBoxLocation.X < 1)
+            {
+                pictureBoxLocation.X = 1;
+            }
+            else if (pictureBoxLocation.X > Bounds.Width - bisonPictureBox.Width)
+            {
+                pictureBoxLocation.X = Bounds.Width - bisonPictureBox.Width;
+            }
         }
 
         private void LoadSettings()

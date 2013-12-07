@@ -17,3 +17,12 @@ C:\Users\hersoncr\Documents\ScreenSaver\ScreenSaver\ScreenSaver\obj\x86\Debug\Sc
 C:\Users\hersoncr\Documents\ScreenSaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.Properties.Resources.resources
 C:\Users\hersoncr\Documents\ScreenSaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.ScreenSaverForm.resources
 C:\Users\hersoncr\Documents\ScreenSaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.csproj.GenerateResource.Cache
+C:\Users\hersoncr\Documents\GitHub\ScreenSaver\ScreesaverDemo\ScreenSaver\obj\x86\Debug\ScreenSaver.exe
+C:\Users\hersoncr\Documents\GitHub\ScreenSaver\ScreesaverDemo\ScreenSaver\obj\x86\Debug\ScreenSaver.pdb
+C:\Users\hersoncr\Documents\GitHub\ScreenSaver\ScreesaverDemo\ScreenSaver\bin\Debug\ScreenSaver.exe
+C:\Users\hersoncr\Documents\GitHub\ScreenSaver\ScreesaverDemo\ScreenSaver\bin\Debug\ScreenSaver.pdb
+C:\Users\hersoncr\Documents\GitHub\ScreenSaver\ScreesaverDemo\ScreenSaver\obj\x86\Debug\ScreenSaver.csprojResolveAssemblyReference.cache
+C:\Users\hersoncr\Documents\GitHub\ScreenSaver\ScreesaverDemo\ScreenSaver\obj\x86\Debug\ScreenSaver.SettingsForm.resources
+C:\Users\hersoncr\Documents\GitHub\ScreenSaver\ScreesaverDemo\ScreenSaver\obj\x86\Debug\ScreenSaver.Properties.Resources.resources
+C:\Users\hersoncr\Documents\GitHub\ScreenSaver\ScreesaverDemo\ScreenSaver\obj\x86\Debug\ScreenSaver.ScreenSaverForm.resources
+C:\Users\hersoncr\Documents\GitHub\ScreenSaver\ScreesaverDemo\ScreenSaver\obj\x86\Debug\ScreenSaver.csproj.GenerateResource.Cache
